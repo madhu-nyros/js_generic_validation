@@ -1,0 +1,21 @@
+input:hover,textarea:hover,select:hover
+{
+  border-color : green;
+}
+#submit
+{
+	margin-left: 500px;
+	margin-top:20px;
+	 padding: 10px 20px !important;
+    font-size: 20px !important;
+    border-radius: 10px !important;
+    text-align: center !important;
+}
+#terms
+{
+	margin-left: 500px;
+}
+.text
+{
+  margin-left: 90px;
+}

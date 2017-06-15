@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</head>
+<body>
+ <div class="panel">
+   <span><h1 class="text-center">Generic validation</h1></span>
+ </div>
+  <div class="container">
+   <form action="" method="Get" name="myform" onsubmit= "return validation();">
+   <div class="well well-lg">
+    <div class="form-group">
+     <div class="row">
+       <div class="col-lg-4">
+         <label class="control-label" for="name">NAME</label>
+        </div>
+         <span id="nametext"> </span>
+          <div class="col-lg-6">
+            <input type="text" class="form-control" id="username" name="username" value="" placeholder="NAME"/>
+         </div>
+       </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-lg-4">
+            <label class="control-label" for="password">PASSWORD</label>
+          </div>
+            <span id="passwordtext"></span>
+          <div class="col-lg-6">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+          </div>
+      </div>
+     </div>
+     <div class="form-group">
+       <div class="row">
+         <div class="col-lg-4">
+           <label class="control-label" for="email">EMAIL</label>
+         </div>
+         <span id="Emailtext"></span>
+         <div class="col-lg-6">
+           <input type="text" name="email" id="email" class="form-control" placeholder="E.g,somename@gmail.com">
+         </div>
+       </div>
+     </div>
+     <div class="form-group">
+        <div class="row">
+          <div class="col-lg-4">
+           <label>LANGUAGE KNOWN</label>
+          </div>
+          <span id="checkboxtext"></span>
+          <div class="col-lg-6 ">
+           <input type="checkbox"  id="telugu" value="Telugu" name="language">TELUGU
+           <input type="checkbox"  id="english" value="English" name="language">ENGLISH
+           <input type="checkbox"  id="hindi" value="Hindi" name="language">HINDI
+        </div>
+     </div>
+    </div>
+     <div class="form-group">
+      <div class="row">
+        <div class="col-lg-4">
+          <label>GENDER</label>
+        </div>
+        <span id="gendertext"></span>
+        <div  class="col-lg-6">
+          MALE<input type="radio"  name="gender" value="male" id="male">
+          FEMALE<input type="radio"  name="gender" value="female" id="female">
+        </div>
+      </div>
+     </div>
+     <div class="form-group">
+       <div class="row">
+         <div class="col-lg-4">
+           <label>QUALIFICATION</label>
+         </div>
+         <span id="qualifytext"></span>
+         <div class="col-lg-6">
+           <select id="qualification1" class="form-control">
+             <option value="0">select</option>
+             <option value="SSC">SSC</option>
+             <option value="INTERMEDIATE">INTERMEDIATE</option>
+             <option value="GRADUATION">GRADUATION</option>
+             <option value="POST GRADUATION">POST GRADUATION</option>
+           </select>
+         </div>
+       </div>
+     </div>
+    </div>
+    <div class="well well-lg">
+     <div class="form-group">
+       <div class="row">
+         <div class="col-lg-4">
+            <label>DATE</label>
+          </div>
+          <div class="col-lg-4">
+             <span><input type="text" name="date" id="date" value="" ></span><span id="datetext">dd/mm/yyyy</span>
+          </div>
+
+          <div class="col-lg-4">
+            <span>TIME <input type="time" id="time" name="time" value="" ></span><span id="timetext">hh:mm</span>
+          </div>
+       </div>
+    </div>
+    <div class="form-group">
+      <div class="row">
+         <div class="col-lg-4">
+             <label>ADDRESS</label>
+         </div>
+         <span id="addresstext"></span>
+         <div class="col-lg-6">
+           <textarea cols="70" rows="3" id="address" class="form-control" placeholder="Enter adress"> </textarea>
+         </div>
+      </div>
+    </div>
+    <div class="form-group">
+       <div class="row">
+	      <div class="col-lg-4">
+	          <label>KNOWN TECHNOLOGIES</label>
+	        </div>
+	        <span id="techtext"></span>
+	        <div class="col-lg-6">
+	          <select class="form-control" id="technologies" multiple>
+	          	<option value="HTML">HTML</option>
+	          	<option value="CSS">CSS</option>
+	          	<option value="JavaScript">JavaScript</option>
+	          	<option value="Jquery">Jquery</option>
+	          	<option value="PHP">PHP</option>
+	          	<option value="Ruby">Ruby</option>
+	          	<option value="java">java</option>
+	          	<option value="Node js">Node js</option>
+	          </select>
+	        </div>
+         </div>
+      </div>
+      <div class="row">
+         <span class="col-lg-6"><input type="checkbox" name="" id="terms"></span><span class="text-center">Agree terms and conditions</span><span class="text" id="termstext"></span>
+      </div>
+      <div class="form-group">
+          <input type="submit" class="btn btn-default"   id="submit" value="submit">
+      </div>
+    </div>
+  </form>
+ </div>
+</body>
+</html>
+
